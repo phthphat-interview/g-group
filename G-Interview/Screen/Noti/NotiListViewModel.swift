@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class NotiListViewModel {
     private let notiAPI = NotiService()
@@ -28,10 +29,24 @@ class NotiListViewModel {
         }
     }
     private func notiModelToSimple(_ model: NotiModel) -> NotiSimple {
+        let attributeText = NSMutableAttributedString(string: model.message.text)
+        for offset in model.message.highlights {
+            let range = NSRange(location: offset.offset, length: offset.length)
+            attributeText.setAttributes(
+                [.font: UIFont.boldSystemFont(ofSize: 14)],
+                range: range
+            )
+        }
+        var dateText = "Undefined"
+        if let date = model.createAt_Date {
+            let dateFormat = DateFormatter()
+            dateFormat.dateFormat = "dd/MM/yyyy, hh:mm"
+            dateText = dateFormat.string(from: date)
+        }
         return NotiSimple(
             id: model.id,
-            notiText: NSAttributedString(string: model.message.text),
-            dateText: "ahihi",
+            notiText: attributeText,
+            dateText: dateText,
             haveRead: model.readAt != 0,
             imgUrl: model.image,
             iconUrl: model.icon

@@ -28,12 +28,18 @@ struct NotiModel: Decodable {
     @Missable var image: String?
     @Missable var icon: String?
     @Missable var readAt: Int
+    @Missable private var createdAt: Int
     
     struct Message: Decodable, DefaultDecodable {
         static var defaultDecodeValue: NotiModel.Message = .init(text: "", highlights: [])
         
         var text: String
         var highlights: [Offset]
+    }
+    
+    var createAt_Date: Date? {
+        if createdAt == 0 { return nil }
+        return Date(timeIntervalSince1970: TimeInterval(createdAt))
     }
 }
 

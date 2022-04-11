@@ -37,8 +37,14 @@ class NotiCell: UITableViewCell {
                 VStackView(
                     UILabel(text: "Title", font: .systemFont(ofSize: 14), textColor: .equalRGB(26), textAlignment: .left, numberOfLines: 0)
                         .ref(to: &titleLb), //or maybe 6
-                    UILabel(text: "Date", font: .systemFont(ofSize: 12), textColor: .equalRGB(128), textAlignment: .left, numberOfLines: 1)
-                        .ref(to: &timeLb),
+                    HStackView(
+                        UILabel(text: "Date", font: .systemFont(ofSize: 12), textColor: .equalRGB(128), textAlignment: .left, numberOfLines: 1)
+                            .ref(to: &timeLb),
+                        UIButton(title: "...", titleColor: .equalRGB(77), font: .boldSystemFont(ofSize: 26))
+                            .width(18)
+                            .ratio(1.0),
+                        configs: [.alignment(.bottom)]
+                    ),
                     configs: [.spacing(4)]
                 ),
                 configs: [.spacing(12), .alignment(.center)]
