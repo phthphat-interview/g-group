@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AutoLayoutHelper",
+        "repositoryURL": "https://github.com/phthphat-lib/autolayout-helper.git",
+        "state": {
+          "branch": null,
+          "revision": "c65c9488cc52b79ef42948dd5f284286da8ef28a",
+          "version": "0.1.2"
+        }
+      },
+      {
+        "package": "DeclarativeStyle",
+        "repositoryURL": "https://github.com/phthphat-lib/declarative-style.git",
+        "state": {
+          "branch": null,
+          "revision": "6c8789a6fdc9adc6c35d55970ca6c5258bb054af",
+          "version": "3.0.2"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher.git",
+        "state": {
+          "branch": null,
+          "revision": "1a7b5480eb750a8e171654b9b1cb0a2cbeb27a55",
+          "version": "7.2.1"
+        }
+      },
+      {
+        "package": "StackViewHelper",
+        "repositoryURL": "https://github.com/phthphat-lib/uistackview-helper.git",
+        "state": {
+          "branch": null,
+          "revision": "d5663d9a223a486096ee036f117ce9b0815a4cf5",
+          "version": "1.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
