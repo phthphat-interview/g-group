@@ -197,9 +197,7 @@
 		4684AD4E2803DDEC004AEFF9 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				460735BC2803E6A3000F2E59 /* View */,
-				4684AD162803D21D004AEFF9 /* NotiListVC.swift */,
-				4684AD4F2803DE8D004AEFF9 /* NotiListViewModel.swift */,
+				46B54F6D280415E4004C31AB /* Noti */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -223,6 +221,16 @@
 				46B54F6928040713004C31AB /* Missable.swift */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		46B54F6D280415E4004C31AB /* Noti */ = {
+			isa = PBXGroup;
+			children = (
+				460735BC2803E6A3000F2E59 /* View */,
+				4684AD162803D21D004AEFF9 /* NotiListVC.swift */,
+				4684AD4F2803DE8D004AEFF9 /* NotiListViewModel.swift */,
+			);
+			path = Noti;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

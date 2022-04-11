@@ -8,6 +8,7 @@ import Foundation
 ///reference to my own package: https://github.com/phthphat-lib/swift-utility/tree/main/Sources/SwiftUtility/CodableHelper
 //PropertyWrapper (treasure of Swift 5)
 @propertyWrapper
+///the properties wrapper prevent throwing error when server response wrong type, or null, or undefined. If it does, it will use `defaultDecodeValue` of `DefaultDecodable` you provide
 public struct Missable<T>: CustomStringConvertible {
     
     public var wrappedValue: T
