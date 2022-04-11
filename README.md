@@ -1,8 +1,8 @@
 # Project for interviewing in GBoard
 
 ## Architecture
-- MVVM without RxSwift (because I'm lazy to integrate it).
-- You will see the UI coding style some how look like SwiftUI. Yes, I'm a Declarative UI lover.
+- MVVM without RxSwift (because I'm too lazy to integrate it).
+- You will see the UI coding style somehow look like SwiftUI. Yes, I'm a Declarative UI lover.
 ## Some used packages
 - Using 3 extra-light coding style pacakges: [DeclarativeStyle](https://github.com/phthphat-lib/declarative-style), [UIStackViewHelper](https://github.com/phthphat-lib/uistackview-helper), [AutoLayoutHelper](https://github.com/phthphat-lib/autolayout-helper) (which is core UI coding style in Go2Joy, of course, all were made by me)
 - Using [Kingfisher](https://github.com/onevcat/Kingfisher) to load image from internet
